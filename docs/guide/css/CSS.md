@@ -12,7 +12,7 @@ CSS主要用于设置HTML页面中的**文本内容**（字体、大小、对齐
 
 CSS规则主要由两个部分构成：==选择器==以及==一条或多条声明==。
 
-![image-20230209154356413](CSS.assets/image-20230209154356413.png)
+![image-20230209154356413](./public/CSS/image-20230209154356413.png)
 
 - `选择器` 是用于指定CSS样式的`HTML标签`，`{}`内部是对该对象设置的具体样式。
 - 属性与属性值之间以"键值对"的形式出现
@@ -188,7 +188,7 @@ h3 {
 
 	用CSS画出下列盒子
 
-	<img src="CSS.assets/image-20230211204255164.png" alt="image-20230211204255164" style="zoom:25%;" />
+	<img src="./public/CSS/image-20230211204255164.png" alt="image-20230211204255164" style="zoom:25%;" />
 
  ```html
  <!DOCTYPE html>
@@ -489,7 +489,7 @@ p {
 }
 ```
 
-<img src="./CSS.assets/image-20230413142356187.png" alt="image-20230413142356187" style="zoom: 33%;" />
+<img src="././public/CSS/image-20230413142356187.png" alt="image-20230413142356187" style="zoom: 33%;" />
 
 - 改变行间距实际上是改变上下间距大小
 - `tips`：**让文字的行高等于盒子的高度**，就可以让文字在当前盒子内垂直居中
@@ -986,7 +986,7 @@ input:focus { /*把获得光标的input表单元素选取出来*/
 </body>
 ```
 
-![image-20230414231623303](./CSS.assets/image-20230414231623303.png)
+![image-20230414231623303](././public/CSS/image-20230414231623303.png)
 
 可以看到，即使未曾对`<p>`标签进行选择，其依旧继承了父级元素`<div>`的样式
 
@@ -1136,11 +1136,11 @@ p 的行高为24px*/
 
 ​			$CSS$ 盒子模型本质上是一个盒子，封装周围的`HTML`元素，它包括：边框、外边距、内边距和实际内容
 
-<img src="./CSS.assets/image-20230415235142471.png" alt="image-20230415235142471" style="zoom:33%;" />
+<img src="././public/CSS/image-20230415235142471.png" alt="image-20230415235142471" style="zoom:33%;" />
 
 ### 边框(`border`)
 
-<img src="./CSS.assets/image-20230415235348044.png" alt="image-20230415235348044" style="zoom:25%;" />
+<img src="././public/CSS/image-20230415235348044.png" alt="image-20230415235348044" style="zoom:25%;" />
 $$
 从上面的图片可以看出，这个盒子的边框有颜色、粗细、实线
 $$
@@ -1221,7 +1221,7 @@ $$
 
 #### `padding`撑开盒子的好处
 
-<img src="./CSS.assets/image-20230416133948791.png" alt="image-20230416133948791" style="zoom:33%;" />
+<img src="././public/CSS/image-20230416133948791.png" alt="image-20230416133948791" style="zoom:33%;" />
 
 由于盒子里面的字数不同，直接规定盒子宽度，导致盒子与内容之间的边距大小不同。
 
@@ -1320,13 +1320,13 @@ $$
 
 
 
-<img src="./CSS.assets/image-20230416144944343.png" alt="image-20230416144944343" style="zoom:33%;" />
+<img src="././public/CSS/image-20230416144944343.png" alt="image-20230416144944343" style="zoom:33%;" />
 
 我们书写的代码实际上是希望父元素下降`50px`，而子元素在父元素之中下降`100px`，达到粉红色框在紫色框中部位置，而实际上这样只会让父元素下降`100px`。
 
 对于两个嵌套关系（父子关系）的块元素，父元素有上外边距的同时子元素也有上外边距，此时父元素会塌陷比较大的外边距值。
 
-<img src="./CSS.assets/image-20230416145247318.png" alt="image-20230416145247318" style="zoom:33%;" />
+<img src="././public/CSS/image-20230416145247318.png" alt="image-20230416145247318" style="zoom:33%;" />
 
 解决方案:
 
@@ -1356,7 +1356,7 @@ $$
     </body>
     ```
 
-    <img src="./CSS.assets/image-20230416153030546.png" alt="image-20230416153030546" style="zoom:25%;" />
+    <img src="././public/CSS/image-20230416153030546.png" alt="image-20230416153030546" style="zoom:25%;" />
 
 - 可以为父元素定义上内边距
 
@@ -1384,7 +1384,7 @@ $$
     </body>
     ```
 
-    <img src="./CSS.assets/image-20230416153146560.png" alt="image-20230416153146560" style="zoom:25%;" />
+    <img src="././public/CSS/image-20230416153146560.png" alt="image-20230416153146560" style="zoom:25%;" />
 
 - 可以为父元素添加`overflow: hidden`
 
@@ -1414,7 +1414,7 @@ $$
 
  
 
-<img src="./CSS.assets/image-20230416153304315.png" alt="image-20230416153304315" style="zoom:25%;" />
+<img src="././public/CSS/image-20230416153304315.png" alt="image-20230416153304315" style="zoom:25%;" />
 
 这种情况可以避免改变盒子的大小
 
@@ -1455,7 +1455,7 @@ $$
 
 ​			$radius$ 半径原理：（椭）园与边框的交集形成圆角效果 
 
-<img src="./CSS.assets/image-20230416184905992.png" alt="image-20230416184905992" style="zoom:33%;" />
+<img src="././public/CSS/image-20230416184905992.png" alt="image-20230416184905992" style="zoom:33%;" />
 
 - 参数可以是`数值`也可以是`百分比`
 
@@ -1537,15 +1537,15 @@ $$
 - 提问：我们用标准流能很方便的实现如下效果吗？
     1. 如何让多个块级盒子(`div`)水平排列成一行？
 
-<img src="./CSS.assets/image-20230416201105299.png" alt="image-20230416201105299" style="zoom: 33%;" />
+<img src="././public/CSS/image-20230416201105299.png" alt="image-20230416201105299" style="zoom: 33%;" />
 
 - 转换`div`为行内块似乎是一种方法。但是，两个盒子之间有缝隙
 
-<img src="./CSS.assets/image-20230416201304877.png" alt="image-20230416201304877" style="zoom: 33%;" />
+<img src="././public/CSS/image-20230416201304877.png" alt="image-20230416201304877" style="zoom: 33%;" />
 
 2. 如何实现两个盒子的左右对齐？
 
-    <img src="./CSS.assets/image-20230416222628210.png" alt="image-20230416222628210" style="zoom:33%;" />
+    <img src="././public/CSS/image-20230416222628210.png" alt="image-20230416222628210" style="zoom:33%;" />
 
 - 有很多的布局效果，标准流无法完成，此时就可以利用浮动完成布局。因为浮动可以改变元素标签默认的排列方式。
 
@@ -1578,17 +1578,17 @@ $$
 1. 脱离标准普通流的控制（浮）移动到指定位置（动）
 2. 浮动的盒子不再保留原先的位置（人去楼空）（相当于调整图层=>可以出现重叠）
 
-<img src="./CSS.assets/image-20230416225303666.png" alt="image-20230416225303666" style="zoom:33%;" />
+<img src="././public/CSS/image-20230416225303666.png" alt="image-20230416225303666" style="zoom:33%;" />
 
 3. 如果多个盒子都设置了浮动，则他们会按照属性值一行内显示并且顶端对齐排列
 
 - 顶端对齐
 
-<img src="./CSS.assets/image-20230416225658301.png" alt="image-20230416225658301" style="zoom:25%;" />
+<img src="././public/CSS/image-20230416225658301.png" alt="image-20230416225658301" style="zoom:25%;" />
 
 - 当页面大小不足时，另起一行
 
-<img src="./CSS.assets/image-20230416225821566.png" alt="image-20230416225821566" style="zoom:25%;" />
+<img src="././public/CSS/image-20230416225821566.png" alt="image-20230416225821566" style="zoom:25%;" />
 
 - 浮动的元素是互相贴靠在一起的（不会有缝隙），如果父级宽度装不下这些浮动的盒子，多出的盒子会另起一行对齐
 
@@ -1610,7 +1610,7 @@ $$
 
 `先用标准流的父元素排列上下位置，之后内部子元素采取浮动排列左右位置。符合网页布局第一准则`
 
-<img src="./CSS.assets/image-20230416232211547.png" alt="image-20230416232211547" style="zoom:33%;" />
+<img src="././public/CSS/image-20230416232211547.png" alt="image-20230416232211547" style="zoom:33%;" />
 
 
 
@@ -1628,7 +1628,7 @@ $$
 
 ​			这是一个，第二个盒子浮动而其他盒子不浮动的现象：
 
-<img src="./CSS.assets/image-20230417003041193.png" alt="image-20230417003041193" style="zoom:25%;" />
+<img src="././public/CSS/image-20230417003041193.png" alt="image-20230417003041193" style="zoom:25%;" />
 
 - 浮动的元素只会影响后面的标准流，不会影响前面的标准流
 
@@ -1642,7 +1642,7 @@ $$
 
 ​			由于父盒子在很多情况下，不方便给出高度，但是子盒子浮动又不占有位置，最后腹肌盒子高度为0时，就会影响下面的标准流盒子。
 
-<img src="./CSS.assets/image-20230417004132817.png" alt="image-20230417004132817" style="zoom:50%;" />
+<img src="././public/CSS/image-20230417004132817.png" alt="image-20230417004132817" style="zoom:50%;" />
 
 - 由于浮动元素不再占用原文档流的位置，所以他会对后面的元素排版产生影响
 
@@ -1811,13 +1811,13 @@ $$
 
 ​			1. 某个元素可以自由的在一个盒子内移动位置并且压住其他盒子
 
-<img src="./CSS.assets/image-20230418164154348.png" alt="image-20230418164154348" style="zoom: 33%;" />
+<img src="././public/CSS/image-20230418164154348.png" alt="image-20230418164154348" style="zoom: 33%;" />
 
  
 
 2. 滚动窗口的时候，盒子是固定在屏幕某个位置的
 
-<img src="./CSS.assets/image-20230418164256500.png" alt="image-20230418164256500" style="zoom:25%;" />
+<img src="././public/CSS/image-20230418164256500.png" alt="image-20230418164256500" style="zoom:25%;" />
 
 - 以上效果，标准流和浮动都无法快速实现，此时需要定位来实现
 
@@ -2042,19 +2042,19 @@ $$
 
 - `visible`：不剪切内容也不添加滚动条。
 
-<img src="./CSS.assets/image-20230418204759341.png" alt="image-20230418204759341" style="zoom:25%;" />
+<img src="././public/CSS/image-20230418204759341.png" alt="image-20230418204759341" style="zoom:25%;" />
 
 - `hidden`：不显示超过对象尺寸的内容
 
-<img src="./CSS.assets/image-20230418204929768.png" alt="image-20230418204929768" style="zoom:25%;" />
+<img src="././public/CSS/image-20230418204929768.png" alt="image-20230418204929768" style="zoom:25%;" />
 
 - `scroll`：总是显示滚动条
 
-<img src="./CSS.assets/image-20230418205033979.png" alt="image-20230418205033979" style="zoom:25%;" />
+<img src="././public/CSS/image-20230418205033979.png" alt="image-20230418205033979" style="zoom:25%;" />
 
 - `auto`：在需要剪切内容时添加滚动条(溢出时才 显示滚动条)
 
-<img src="./CSS.assets/image-20230418205136171.png" alt="image-20230418205136171" style="zoom:33%;" />
+<img src="././public/CSS/image-20230418205136171.png" alt="image-20230418205136171" style="zoom:33%;" />
 
 - `overflow`属性指定了如果内容溢出一个元素的框（超过其指定的高度及宽度）时，会发生什么
 - 一般情况下，我们都不想让溢出内容显示出来，因为溢出部分会影响布局。但是如果有定位的盒子，请使用`overflow: hidden;`因为他会隐藏多余的部分
@@ -2063,7 +2063,7 @@ $$
 
 - 为什么需要精灵图？
 
-<img src="./CSS.assets/image-20230418211702826.png" alt="image-20230418211702826" style="zoom:25%;" />
+<img src="././public/CSS/image-20230418211702826.png" alt="image-20230418211702826" style="zoom:25%;" />
 
 ​			一个网页往往会应用很多小的背景图片作为装饰，当网页中的图像过多时，服务器就会频繁地接收和发送请求图片，造成服务器请求压力过大，这将大大降低页面的加载速度
 
@@ -2075,7 +2075,7 @@ $$
 
 ​			这是一个精灵图
 
-<img src="./CSS.assets/index.png" alt="img" style="zoom:33%;" />
+<img src="././public/CSS/index.png" alt="img" style="zoom:33%;" />
 
 1. 精灵技术主要针对于背景图片使用。就是把多个小图片整合到一张大图片中
 2. 移动背景图片位置，此时可以使用`background-position`
@@ -2112,11 +2112,11 @@ $$
 
 1. 把下载包里面的`fonts`文件夹放入页面根目录
 
-    ![image-20230419132555148](./CSS.assets/image-20230419132555148.png)
+    ![image-20230419132555148](././public/CSS/image-20230419132555148.png)
 
 - 为什么有这几种文件呢？
 
-    ![image-20230419132708277](./CSS.assets/image-20230419132708277.png)
+    ![image-20230419132708277](././public/CSS/image-20230419132708277.png)
 
 - 不同的浏览器所支持的字体格式是不一样的，字体图标之所以兼容，就是因为包含了主流浏览器支持的字体文件
     1. $TrueType$(`.ttf`)格式：`.ttf`字体是 $Windows$ 和 $Mac$ 的最常见字体，支持这种字体的浏览器有 $IE9+、Firefox3.5+、Chrome4+、Safari3+、Opera10+、IOS \ Mobile、Safari4.2+$
@@ -2147,18 +2147,18 @@ $$
 
 ​			下载后，在文件夹中的`.css`文件直接复制即可
 
-<img src="./CSS.assets/image-20230419134152702.png" style="zoom: 33%;" />
+<img src="././public/CSS/image-20230419134152702.png" style="zoom: 33%;" />
 
 3. 在`HTML`标签内添加小图标
 
-    ![image-20230419134433998](./CSS.assets/image-20230419134433998.png)
+    ![image-20230419134433998](././public/CSS/image-20230419134433998.png)
 
 `<span>口</span>` 引入
 
 4. 给标签声明字体
     - 作为文字，你也可以指定大小和颜色
 
-![image-20230419134717172](./CSS.assets/image-20230419134717172.png)
+![image-20230419134717172](././public/CSS/image-20230419134717172.png)
 
 
 
@@ -2184,7 +2184,7 @@ $$
 
 会出现下列图像：
 
-![image-20230420141555675](./CSS.assets/image-20230420141555675.png)
+![image-20230420141555675](././public/CSS/image-20230420141555675.png)
 
 如果要创建三角，只需要让其余三个角的颜色为透明即可
 
@@ -2201,7 +2201,7 @@ $$
 
 
 
-![image-20230420141707446](./CSS.assets/image-20230420141707446.png)
+![image-20230420141707446](././public/CSS/image-20230420141707446.png)
 
 
 ## $CSS$ 用户界面样式
@@ -2230,7 +2230,7 @@ $$
 
 ### 轮廓线(`outline`)
 
-​			<img src="./CSS.assets/image-20230420144209053.png" alt="image-20230420144209053" style="zoom:33%;" />
+​			<img src="././public/CSS/image-20230420144209053.png" alt="image-20230420144209053" style="zoom:33%;" />
 
 ​			当鼠标点击`input`输入框时，输入框出现蓝色轮廓线
 
@@ -2257,7 +2257,7 @@ $$
 | `middle`   | 把此元素放置在父元素的中部           |
 | `bottom`   | 把元素的顶端与行中最低元素的顶端对齐 |
 
-<img src="./CSS.assets/image-20230420150435820.png" alt="image-20230420150435820" style="zoom:50%;" />
+<img src="././public/CSS/image-20230420150435820.png" alt="image-20230420150435820" style="zoom:50%;" />
 
 ​		
 
@@ -2267,7 +2267,7 @@ $$
 
 #### `vertical-align`属性解决图片底部默认空白缝隙问题
 
-​	<img src="./CSS.assets/image-20230420152921608.png" alt="image-20230420152921608" style="zoom:33%;" />
+​	<img src="././public/CSS/image-20230420152921608.png" alt="image-20230420152921608" style="zoom:33%;" />
 
 ​			
 
@@ -2323,15 +2323,15 @@ $$
 
 在淘宝网的物品界面
 
-<img src="./CSS.assets/image-20230420160226872.png" alt="image-20230420160226872" style="zoom: 25%;" />
+<img src="././public/CSS/image-20230420160226872.png" alt="image-20230420160226872" style="zoom: 25%;" />
 
 每个物品栏都有一个边框，但如果用`boder: 1px`，则会出现`1+1=2`的下列效果
 
-<img src="./CSS.assets/image-20230420160201114.png" alt="image-20230420160201114" style="zoom:25%;" />
+<img src="././public/CSS/image-20230420160201114.png" alt="image-20230420160201114" style="zoom:25%;" />
 
 如果我们将右边盒子的`margin-left`设置成`-1px`
 
-<img src="./CSS.assets/image-20230420160443448.png" alt="image-20230420160443448" style="zoom:25%;" />
+<img src="././public/CSS/image-20230420160443448.png" alt="image-20230420160443448" style="zoom:25%;" />
 
 就可以让右边的盒子压住左边的盒子，从而形成`1+1=1`的效果（先浮动，再`-1px`）
 
@@ -2343,7 +2343,7 @@ $$
 
 ​			巧妙运用浮动元素不会压住文字的特性
 
-<img src="./CSS.assets/image-20230420161930467.png" alt="image-20230420161930467" style="zoom:33%;" />
+<img src="././public/CSS/image-20230420161930467.png" alt="image-20230420161930467" style="zoom:33%;" />
 
 实现这样一个效果
 
@@ -2383,7 +2383,7 @@ $$
 
 ​			
 
-<img src="./CSS.assets/image-20230420163031508.png" alt="image-20230420163031508" style="zoom:33%;" />
+<img src="././public/CSS/image-20230420163031508.png" alt="image-20230420163031508" style="zoom:33%;" />
 
 ```html
 <style>
@@ -2458,7 +2458,7 @@ $$
 
 ### 三角强化
 
-<img src="./CSS.assets/image-20230420170059610.png" alt="image-20230420170059610" style="zoom:33%;" />
+<img src="././public/CSS/image-20230420170059610.png" alt="image-20230420170059610" style="zoom:33%;" />
 
 要实现上述三角
 
@@ -2478,7 +2478,7 @@ $$
 
 即可出现下列图像，此时将多余部分设置为`transparent`即可
 
-![image-20230420170754872](./CSS.assets/image-20230420170754872.png)
+![image-20230420170754872](././public/CSS/image-20230420170754872.png)
 
 实现：
 
@@ -2535,7 +2535,7 @@ $$
 </body>
 ```
 
-![image-20230420172213773](./CSS.assets/image-20230420172213773.png)
+![image-20230420172213773](././public/CSS/image-20230420172213773.png)
 
 
 
@@ -2684,7 +2684,7 @@ $$
 </body>
 ```
 
-![image-20230421190524597](./CSS.assets/image-20230421190524597.png)
+![image-20230421190524597](././public/CSS/image-20230421190524597.png)
 
 ### 伪元素视频遮罩层
 
@@ -2724,7 +2724,7 @@ $$
 
 - 在`.clearfix`的盒子后面添加一个不可见的块盒子，其实也就是额外标签法的升级和优化
 
-<img src="./CSS.assets/image-20230422120455761.png" alt="image-20230422120455761" style="zoom:33%;" />
+<img src="././public/CSS/image-20230422120455761.png" alt="image-20230422120455761" style="zoom:33%;" />
 
 ```html
 <style>
@@ -2739,7 +2739,7 @@ $$
 </style>
 ```
 
-<img src="./CSS.assets/image-20230422120704628.png" alt="image-20230422120704628" style="zoom: 25%;" />
+<img src="././public/CSS/image-20230422120704628.png" alt="image-20230422120704628" style="zoom: 25%;" />
 
 
 
@@ -2791,7 +2791,7 @@ $$
 - **花费时间**：单位是`秒`（必须写单位），比如`0.5s`
 - **运动曲线**：默认是`ease`（可以省略）
 
-​		<img src="./CSS.assets/image-20230422132211140.png" alt="image-20230422132211140" style="zoom: 50%;" />
+​		<img src="././public/CSS/image-20230422132211140.png" alt="image-20230422132211140" style="zoom: 50%;" />
 
 - **何时开始**：单位是`秒`（必须写单位）可以设置延迟出发时间 默认是`0s`（可以省略）
 
@@ -2835,11 +2835,11 @@ $$
 
  			$2D$ 转换是改变标签在二维平面上的位置和形状的一种技术
 
-<img src="./CSS.assets/image-20230422135400571.png" alt="image-20230422135400571" style="zoom: 33%;" />
+<img src="././public/CSS/image-20230422135400571.png" alt="image-20230422135400571" style="zoom: 33%;" />
 
 #### 移动`tanslate`
 
-<img src="./CSS.assets/image-20230422135448945.png" alt="image-20230422135448945" style="zoom:25%;" />
+<img src="././public/CSS/image-20230422135448945.png" alt="image-20230422135448945" style="zoom:25%;" />
 
 ​			$2D$ 移动是 $2D$ 转换里面的一种功能，可以改变元素在页面中的位置，类似定位。
 
@@ -2862,7 +2862,7 @@ transform: translateY(n);
 
 - 使盒子垂直居中，水平居中的
 
-    - <img src="./CSS.assets/image-20230422185734360.png" alt="image-20230422185734360" style="zoom:33%;" />
+    - <img src="././public/CSS/image-20230422185734360.png" alt="image-20230422185734360" style="zoom:33%;" />
 
     - 用此方法可以，但是如果父盒子大小变换，则子元素盒子也需要修改参数
 
@@ -3010,7 +3010,7 @@ transform: translateY(n);
 
 ## $3D$ 转换
 
-<img src="./CSS.assets/image-20230422225100006.png" alt="image-20230422225100006" style="zoom: 33%;" />
+<img src="././public/CSS/image-20230422225100006.png" alt="image-20230422225100006" style="zoom: 33%;" />
 
 ### 三维坐标系
 
@@ -3059,7 +3059,7 @@ transform: translateY(n);
 - 透视我们也称为视距：就是人的眼睛到屏幕的距离
 - 距离视觉点越近的在电脑平面成像越大，越远成像越小
 - 透视的单位是像素
-- <img src="./CSS.assets/image-20230422230841083.png" alt="image-20230422230841083" style="zoom: 33%;" />
+- <img src="././public/CSS/image-20230422230841083.png" alt="image-20230422230841083" style="zoom: 33%;" />
 - 透视写在被观察元素的父盒子上面
     - `d`：就是视距
     - `z`：就是`z`轴
@@ -3071,7 +3071,7 @@ transform: translateY(n);
 
 ### $3D$ 呈现
 
-<img src="./CSS.assets/image-20230423140715389.png" alt="image-20230423140715389" style="zoom:33%;" />
+<img src="././public/CSS/image-20230423140715389.png" alt="image-20230423140715389" style="zoom:33%;" />
 
 **$3D$呈现`transform-style`**
 
@@ -3103,7 +3103,7 @@ transform: translateY(n);
 - 伸缩布局 = 弹性布局 = 伸缩盒布局 = 弹性盒布局 = $flex$ 布局
 - 采用 $flex$ 布局的元素，称为 $Flex$ 容器，简称容器。它的所有子元素自动成为容器成员，称为 $Flex$ 项目，简称"项目"
 - 子容器可以横向排列也可以纵向排列 
-- <img src="./CSS.assets/image-20230423211958360.png" alt="image-20230423211958360" style="zoom:33%;" />
+- <img src="././public/CSS/image-20230423211958360.png" alt="image-20230423211958360" style="zoom:33%;" />
 
 **总结原理：**通过给父盒子添加 `flex属性`，来控制子盒子的位置和排列方式
 
