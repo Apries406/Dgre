@@ -1,0 +1,11 @@
+[
+	"index",
+	"HTML",
+	{
+		"type": "dir",
+		"name": "foo",
+		"label": "Foo",
+		"collapsible": true,
+		"collapsed": false
+	}
+]
